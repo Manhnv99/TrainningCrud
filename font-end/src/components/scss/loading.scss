@@ -1,0 +1,25 @@
+/* HTML: <div class="loader"></div> */
+
+.loading-container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  .loader {
+    width: 170px;
+    height: 30px;
+    border-radius: 20px;
+    background:
+            repeating-linear-gradient(135deg,#f03355 0 10px,#ffa516 0 20px) 0/0%   no-repeat,
+            repeating-linear-gradient(135deg,#ddd    0 10px,#eee    0 20px) 0/100%;
+    animation: l3 1.5s infinite;
+  }
+  @keyframes l3 {
+    100% {background-size:100%}
+  }
+}

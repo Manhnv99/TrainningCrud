@@ -1,0 +1,46 @@
+.container-fluid{
+  p{
+    margin-bottom: 0.3rem;
+    color: #444;
+  }
+}
+input{
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 5px;
+  height: 30px;
+}
+select{
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 5px;
+  height: 30px;
+}
+.action{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 5px 0;
+  button:nth-child(1){
+    border: 1px solid #4aa168;
+    background-color: #4aa168;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  button:nth-child(2){
+    margin-left: 10px;
+    color: #fff;
+    border: 1px solid #5e6675;
+    background-color: #5e6675;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+}
+  .validate{
+    display: flex;
+    span{
+      display: none;
+      margin-left: 5px;
+      color: red;
+    }
+  }

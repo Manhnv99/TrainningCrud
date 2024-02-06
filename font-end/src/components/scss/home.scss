@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  //làm cho dòng chữ ở trong input cách ra.
+}
+body{
+  background-color: #f5f6fd;
+}
+.product__container{
+  margin: 150px auto 0 auto;
+  width: 90%;
+  border: 1px solid #999;
+  border-radius: 10px;
+  //set khoảng cách
+  .product__body{
+    padding: 25px;
+  }
+
+  //css header
+  .search-header p{
+    margin-bottom: 5px;
+    color: #444;
+  }
+  .search-header__setWidth{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  .search-header__icon{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    i{
+      cursor: pointer;
+      font-size: 15px;
+      padding: 7px;
+      color: #fff;
+      background-color: #5cae7b;
+      border-radius: 50%;
+    }
+  }
+
+
+  //css table
+  .table-body{
+    margin: 130px 0 0 0;
+  }
+  .table-body__service{
+    display: flex;
+    justify-content: space-between;
+    //css button
+    .table-body__service__add button{
+      border: 1px solid #71b17c;
+      background-color: #71b17c;
+      border-radius: 5px;
+      padding: 4px 10px;
+      font-weight: 400;
+      color: #fff;
+    }
+    button:hover{
+      opacity: 0.8;
+      transition: 0.2s linear;
+    }
+    //css search
+    .table-body__service__search span{
+      color: #444;
+      font-size: 17px;
+    }
+    .table-body__service__search input{
+      width: 200px;
+      height: 30px;
+      border: 1px solid #999;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  //css table
+  .table-body__table{
+    margin-top: 20px;
+    table{
+      width: 100%;
+      border: 1px solid #999;
+      color: #999;
+    }
+    td{
+      color: #444;
+      font-size: 15px;
+
+    }
+    .function{
+      text-align: center;
+      .function__eye{
+        cursor: pointer;
+        padding: 6px 8px;
+        color: #ffffff;
+        background-color: #5daa54;
+        border-radius: 3px;
+      }
+      .function__pencil{
+        cursor: pointer;
+        padding: 6px 8px;
+        color: #fff;
+        background-color: #f6c344;
+        margin-left: 10px;
+        border-radius: 3px;
+      }
+      .function__trash{
+        cursor: pointer;
+        padding: 6px 9px;
+        color: #fff;
+        background-color: #f42f4c;
+        margin-left: 10px;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    color: #444;
+    .page{
+      color: #444;
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .director{
+      cursor: pointer;
+      background-color: #5daa54;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #fff;
+    }
+      .director:hover{
+        opacity: 0.8;
+        transition: ease-in-out 0.3s;
+      }
+    .active{
+      background-color: #5daa54;
+    }
+  }
+}
